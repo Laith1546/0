@@ -1,0 +1,68 @@
+body {
+    background: rgb(197, 215, 231);
+    font-family: 'Roboto', sans-serif;
+    animation-name: fading;
+    animation-duration: 1.5s;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    flex: 60%;
+    padding: 0px 40px 0px 0px;
+}
+
+.right-side {
+    flex: 20%;
+    background: BlanchedAlmond;
+}
+
+.right-side a {
+    color: rgb(91, 158, 212);
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.right-side a:hover {
+    color: rgb(190, 202, 212);
+}
+
+.subtitle-1 {
+    display: flex;
+}
+
+.post-item {
+    border: 2px solid rgb(207, 135, 2);
+    padding: 5px;
+    margin: 10px;
+}
+
+#subtitle-image {
+    max-height: 350px;
+    width: 200px;
+    margin: 0 0 0 10px;
+    border: 2px solid white;
+    transition: width 1s;
+}
+
+#subtitle-image:hover {
+    width: 600px;
+}
+
+#image {
+    height: 200px;
+    border: 2px solid black;
+    transition: height 1s;
+}
+
+#image:hover {
+    height: 400px;
+}
+
+@keyframes fading {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
